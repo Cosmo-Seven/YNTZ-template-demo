@@ -42,12 +42,22 @@
   </nav>
 
   <header id="home" data-aos="fade-down">
-    <div class="section__container header__container">
-      <h1 class="section__header" data-aos="fade-up" data-aos-delay="200">
-        Find Your Perfect Ride Today
-      </h1>
-    </div>
-  </header>
+  <!-- Background Video -->
+  <video class="header__video" autoplay muted loop playsinline>
+    <source src="image/video.mp4" type="video/mp4">
+  </video>
+
+  <!-- Overlay (optional) -->
+  <div class="header__overlay"></div>
+
+  <!-- Content -->
+  <div class="section__container header__container">
+    <h1 class="section__header" data-aos="fade-up" data-aos-delay="200">
+      Find Your Perfect Ride Today
+    </h1>
+   
+  </div>
+</header>
 
   <section class="section__container gallery__container" id="gallery" data-aos="fade-up">
     <p class="section__subheader" data-aos="fade-right">EIGHTYEIGHT DETAILING</p>
@@ -56,19 +66,19 @@
     <div class="swiper" data-aos="zoom-in" data-aos-delay="200">
       <div class="swiper-wrapper">
         <div class="swiper-slide" data-aos="fade-up" data-aos-delay="100">
-          <img src="assets/gallery-1.png" alt="gallery" />
+          <img src="assets/gallery-1.png" alt="gallery" style="border-radius: .5rem;"/>
         </div>
         <div class="swiper-slide" data-aos="fade-up" data-aos-delay="200">
-          <img src="assets/gallery-2.png" alt="gallery" />
+          <img src="assets/gallery-2.png" alt="gallery" style="border-radius: .5rem;"/>
         </div>
         <div class="swiper-slide" data-aos="fade-up" data-aos-delay="300">
-          <img src="assets/gallery-3.png" alt="gallery" />
+          <img src="assets/gallery-3.png" alt="gallery" style="border-radius: .5rem;"/>
         </div>
         <div class="swiper-slide" data-aos="fade-up" data-aos-delay="400">
-          <img src="assets/gallery-4.png" alt="gallery" />
+          <img src="assets/gallery-4.png" alt="gallery" style="border-radius: .5rem;"/>
         </div>
         <div class="swiper-slide" data-aos="fade-up" data-aos-delay="500">
-          <img src="assets/gallery-5.png" alt="gallery" />
+          <img src="assets/gallery-5.png" alt="gallery" style="border-radius: .5rem;"/>
         </div>
       </div>
     </div>
@@ -76,9 +86,7 @@
 
   <section class="section__container service__container" id="about" data-aos="fade-up">
     <p class="section__subheader" data-aos="fade-right">KNOW US BETTER</p>
-    <h2 class="section__header" data-aos="fade-left">
-      A BRAND NEW AUTOMATIVE CULTURE IS UNFOLDING
-    </h2>
+
     <div class="service__content">
       <div class="service__row" data-aos="fade-up" data-aos-delay="100">
         <div class="service__img">
