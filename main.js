@@ -80,3 +80,10 @@ instagramContent.forEach((item) => {
   duplicateNode.setAttribute("aria-hidden", true);
   instagram.appendChild(duplicateNode);
 });
+
+const sideBar = document.querySelector('.nav__links')
+const toggleBtn = document.querySelector('.nav__menu__btn')
+
+toggleBtn.addEventListener('click', () => {
+  sideBar.classList.toggle('active')
+})

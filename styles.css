@@ -133,7 +133,7 @@ nav {
 .nav__links {
   position: absolute;
   bottom: 0;
-  left: 0;
+  /* left: 0; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -463,19 +463,23 @@ header::before {
 
   .nav__logo a img {
     max-width: 200px;
-  }
-
-  .nav__menu__btn {
-    display: none;
-  }
+  } 
 
   .nav__links {
-    position: static;
+    position: fixed;
     width: fit-content;
-    padding: 0;
-    flex-direction: row;
+    align-items: end;
+    top: 0;
+    right: -100%;
+    padding: 0 30px 0 0;
+    flex-direction: column;
     background-color: transparent;
     transform: none !important;
+    transition: .5s;
+  }
+
+  .active {
+    right: 0;
   }
 
   .nav__links a {
